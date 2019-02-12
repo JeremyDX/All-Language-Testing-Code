@@ -18,11 +18,6 @@ public class Main
 		System.out.println(new String(DecimalToBinary(value, 32)));
 	}
 
-	//1 = 15.
-	//2 = 255.
-	//3 = 1023.
-	//4 =
-
 	public static char[] DecimalToBinary(int value, int bitsize)
 	{
 		char[] binary = new char[(bitsize + 7) >> 3 << 3];
@@ -38,19 +33,6 @@ public class Main
 		}
 		///for (int n = begin; --n >= 0; )
 		///	binary[n] = 48;
-		return binary;
-	}
-
-	public static char[] DecimalToBinary2(int value, int bitsize)
-	{
-		char[] binary = new char[bitsize >> 2];
-		int bit_value = 1;
-		for (int n = binary.length; --n >= 0; )
-		{
-			System.out.println("Value: " + bit_value);
-			binary[n] = '1';
-		
-		}
 		return binary;
 	}
 }
